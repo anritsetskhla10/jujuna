@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    
+    .flexDir{
+        @apply flex flex-row items-center;
+    }
+    
+    .linkFont{
+        @apply font-arialgeo text-[16px] text-color-primary;
+    }
+
+    .titleFont{
+        @apply font-tommaso text-[48px] text-color-primary ;
+    }
+
+    .paragraphFont{
+            @apply font-arialgeo text-[24px] text-color-primary;
+    }
+
+    .gradient{
+        background: 
+        url(/images/jujuna1.png) 88% bottom / 66.7% 100% no-repeat,
+        url(/images/jujuna2.png) 100% center / calc(100% - 57.6%) 100% no-repeat,
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+        linear-gradient(233deg, #A583D1 25%, #724AA4 43%, #1E122E 81%);
+    }
+
+    .aboutBG{
+        @apply w-full h-full bg-no-repeat bg-center bg-cover;
+        background-image: url(/images/marani.png);
+    }
+    
+}
