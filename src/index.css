@@ -8,6 +8,10 @@
     .flexDir{
         @apply flex flex-row items-center;
     }
+
+    .flexCol{
+        @apply flex flex-col gap-4 ;
+    }
     
     .linkFont{
         @apply font-arialgeo text-[16px] text-color-primary;
@@ -15,6 +19,10 @@
 
     .titleFont{
         @apply font-tommaso text-[48px] text-color-primary ;
+    }
+
+    .titleFontBlack{
+        @apply font-tommaso text-[40px] text-color-black ;
     }
 
     .paragraphFont{
@@ -33,5 +41,44 @@
         @apply w-full h-full bg-no-repeat bg-center bg-cover;
         background-image: url(/images/marani.png);
     }
+
+    .btn{
+        @apply w-[126px] p-[14px] rounded-[50px] self-end font-arialgeo text-[18px] text-color-primary whitespace-nowrap;
+    }
     
+    .bottleBanner{
+        @apply w-full h-full bg-no-repeat bg-right-top ;
+        background-image: url(/images/bottle-banner.png);
+
+    }
+
+    .purpleBox{
+        @apply flex flex-col gap-4 py-[11.5px] px-[30px] bg-buttonColor-primary rounded-[10px]
+        border-solid border-[4px] border-buttonColor-primary ;
+    }
+
+    .gridCocktails{
+        @apply grid grid-cols-2 gap-[23px]
+    }
+
+    .borderB{
+        @apply pb-[16px] border-b-[#848282] border-solid border-b-[1px]; 
+    }
+
+    .barBanner{
+        @apply  bg-no-repeat bg-center bg-cover;
+        background-image: url(/images/banner2.png);
+
+    }
+
+    .contactBanner{
+        @apply  bg-no-repeat bg-center bg-cover;
+        background-image: url(/images/banner1.png);
+    }
+
+    .inputStyle{
+        @apply w-[328px] rounded-[10px] font-arialgeo text-[12px]  
+        bg-inputColor-primary text-inputColor-secondary hover:text-inputColor-secondary;
+    }
+
 }

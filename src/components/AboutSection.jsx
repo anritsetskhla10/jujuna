@@ -2,7 +2,7 @@ import React from 'react'
 
 function AboutSection() {
   return (
-    <div className='aboutBG pt-[70px] pb-[37px] pl-[80px]'>
+    <div className='aboutBG pt-[4.8%] pb-[37px] pl-[5.5%]'>
       <h2 className='titleFont mb-[69px]'>ჩვენ შესახებ</h2>
       <div className='w-[64%]'>
         <p className='paragraphFont mb-5'> ჟუჟუნა ძალიან მშრალი და მომჟავო ღვინო 2017 წელს შეიქმნა.</p>

@@ -4,6 +4,10 @@ import {  Element } from 'react-scroll';
 import FirstSection from '../components/FirstSection';
 import AboutSection from '../components/AboutSection';
 import News from '../components/News';
+import Bottle from '../components/Bottle';
+import Bar from '../components/Bar';
+import Cocktails from '../components/Cocktails';
+import Contact from '../components/Contact';
 
 function HomePage() {
   return (
@@ -18,8 +22,17 @@ function HomePage() {
       <Element name="news" >
         <News/>
       </Element>
-      <Element name="section3" className="element">
-        Section 3 Content
+      <Element name="bottle">
+        <Bottle/>
+      </Element>
+      <Element name="cocktails" >
+        <Cocktails/>
+      </Element>
+      <Element name="bar" >
+        <Bar/>
+      </Element>
+      <Element name="contact">
+        <Contact/>
       </Element>
     </div>
   )
