@@ -8,6 +8,7 @@ import Bottle from '../components/Bottle';
 import Bar from '../components/Bar';
 import Cocktails from '../components/Cocktails';
 import Contact from '../components/Contact';
+import Footer from '../components/Footer';
 
 function HomePage() {
   return (
@@ -34,6 +35,7 @@ function HomePage() {
       <Element name="contact">
         <Contact/>
       </Element>
+      <Footer/>
     </div>
   )
 }

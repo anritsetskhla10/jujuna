@@ -77,8 +77,8 @@
     }
 
     .inputStyle{
-        @apply w-[328px] rounded-[10px] font-arialgeo text-[12px]  
-        bg-inputColor-primary text-inputColor-secondary hover:text-inputColor-secondary;
+        @apply w-[328px] rounded-[10px] font-arialgeo text-[12px] p-[10px] 
+        bg-inputColor-primary  text-inputColor-secondary hover:text-inputColor-secondary;
     }
 
 }
