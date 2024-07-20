@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
-  darkMode: "darkMode",
+  darkMode: "class", 
   theme: {
     extend: {
       fontFamily: {
@@ -54,6 +54,11 @@ export default {
             secondary: "#000",
           },
         },
+      },
+      screens: {
+        'max-mobile': {'max': '768px'},
+        'max-md': {'max': '1024px'},
+        'max-tablet': {'max': '1439px'},
       },
     },
   },

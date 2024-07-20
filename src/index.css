@@ -14,7 +14,7 @@
     }
     
     .linkFont{
-        @apply font-arialgeo text-[16px] text-color-primary;
+        @apply font-arialgeo text-[16px] text-color-primary ;
     }
 
     .titleFont{
@@ -26,7 +26,7 @@
     }
 
     .paragraphFont{
-            @apply font-arialgeo text-[24px] text-color-primary;
+            @apply font-arialgeo text-[24px] text-color-primary max-md:text-[20px];
     }
 
     .gradient{
@@ -37,9 +37,21 @@
         linear-gradient(233deg, #A583D1 25%, #724AA4 43%, #1E122E 81%);
     }
 
+    .gradientMin{
+        background:  
+        url(/images/bottles.png) right bottom  no-repeat,
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+        linear-gradient(233deg, #A583D1 25%, #724AA4 43%, #1E122E 81%);
+    }
+
     .aboutBG{
         @apply w-full h-full bg-no-repeat bg-center bg-cover;
         background-image: url(/images/marani.png);
+    }
+
+    .aboutBGMin{
+        @apply w-full h-full bg-no-repeat bg-right-top ;
+        background-image: url(/images/marani-mobile.png);
     }
 
     .btn{
@@ -47,14 +59,15 @@
     }
     
     .bottleBanner{
-        @apply w-full h-full bg-no-repeat bg-right-top ;
         background-image: url(/images/bottle-banner.png);
+        @apply w-full h-full bg-no-repeat bg-right-top 
+        max-mobile:bg-[url(/images/bottle-banner-mob.png)];
 
     }
 
     .purpleBox{
-        @apply flex flex-col gap-4 py-[11.5px] px-[30px] bg-buttonColor-primary rounded-[10px]
-        border-solid border-[4px] border-buttonColor-primary ;
+        @apply flex flex-col gap-4 max-tablet:gap-1 py-[11.5px] max-tablet:w-[160px] px-[30px] bg-buttonColor-primary rounded-[10px]
+        border-solid border-[1px] border-buttonColor-primary ;
     }
 
     .gridCocktails{
@@ -66,19 +79,31 @@
     }
 
     .barBanner{
-        @apply  bg-no-repeat bg-center bg-cover;
+        @apply  bg-no-repeat bg-center bg-cover max-md:bg-left-bottom;
         background-image: url(/images/banner2.png);
-
     }
 
     .contactBanner{
-        @apply  bg-no-repeat bg-center bg-cover;
         background-image: url(/images/banner1.png);
+        @apply  bg-no-repeat bg-center bg-cover  max-md:bg-right-bottom  max-mobile:bg-cover
+        max-mobile:bg-[url(/images/banner1-mobile.png)];
+
     }
 
     .inputStyle{
         @apply w-[328px] rounded-[10px] font-arialgeo text-[12px] p-[10px] 
-        bg-inputColor-primary  text-inputColor-secondary hover:text-inputColor-secondary;
+        bg-inputColor-primary  text-inputColor-secondary placeholder:text-inputColor-secondary
+        max-mobile:w-[209px] max-mobile:text-[10px];
     }
 
+    .navPosition {
+        @apply absolute top-0 left-0 w-[50%] h-[100vh] z-10
+        bg-backgroundColor-purpleMid py-16 px-16
+        max-md:translate-x-0;
+        transition: transform 0.5s ease-in-out;
+    }
+    
+    .Invisible {
+        @apply max-md:translate-x-[-100%];
+    }
 }
