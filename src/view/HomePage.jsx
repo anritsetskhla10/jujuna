@@ -9,8 +9,24 @@ import Bar from '../components/Bar';
 import Cocktails from '../components/Cocktails';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
+import { useState, useEffect } from 'react';
 
 function HomePage() {
+
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  useEffect(() => {
+    const darkModePreference = localStorage.getItem('theme') === 'dark';
+    setIsDarkMode(darkModePreference);
+  }, []);
+
+  const toggleTheme = () => {
+    const newMode = !isDarkMode;
+    setIsDarkMode(newMode);
+    localStorage.setItem('theme', newMode ? 'dark' : 'light');
+    document.documentElement.classList.toggle('dark', newMode);
+  };
+
   return (
     <div>
       <Nav/>
@@ -21,7 +37,7 @@ function HomePage() {
         <AboutSection/>
       </Element>
       <Element name="news" >
-        <News/>
+         <News isDarkMode={isDarkMode} />
       </Element>
       <Element name="bottle">
         <Bottle/>
@@ -35,7 +51,7 @@ function HomePage() {
       <Element name="contact">
         <Contact/>
       </Element>
-      <Footer/>
+      <Footer isDarkMode={isDarkMode} toggleTheme={toggleTheme} />
     </div>
   )
 }
