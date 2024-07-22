@@ -45,13 +45,12 @@
     }
 
     .aboutBG{
-        @apply w-full h-full bg-no-repeat bg-center bg-cover;
-        background-image: url(/images/marani.png);
+        @apply w-full h-full bg-no-repeat bg-center bg-cover bg-[url(/images/marani.png)];
     }
 
     .aboutBGMin{
-        @apply w-full h-full bg-no-repeat bg-right-top ;
-        background-image: url(/images/marani-mobile.png);
+        @apply w-full h-full bg-no-repeat bg-right-top bg-[url(/images/marani-mobile.png)] ;
+
     }
 
     .btn{
@@ -59,8 +58,7 @@
     }
     
     .bottleBanner{
-        background-image: url(/images/bottle-banner.png);
-        @apply w-full h-full bg-no-repeat bg-right-top 
+        @apply bg-[url(/images/bottle-banner.png)] w-full h-full bg-no-repeat bg-right-top 
         max-mobile:bg-[url(/images/bottle-banner-mob.png)];
 
     }
@@ -79,13 +77,13 @@
     }
 
     .barBanner{
-        @apply  bg-no-repeat bg-center bg-cover max-md:bg-left-bottom;
-        background-image: url(/images/banner2.png);
+        @apply  bg-no-repeat bg-center bg-cover max-md:bg-left-bottom
+        bg-[url(/images/banner2.png)];
     }
 
     .contactBanner{
-        background-image: url(/images/banner1.png);
-        @apply  bg-no-repeat bg-center bg-cover  max-md:bg-right-bottom  max-mobile:bg-cover
+        @apply  bg-[url(/images/banner1.png)]
+        bg-no-repeat bg-center bg-cover  max-md:bg-right-bottom  max-mobile:bg-cover
         max-mobile:bg-[url(/images/banner1-mobile.png)];
 
     }

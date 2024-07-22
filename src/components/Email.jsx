@@ -8,7 +8,7 @@ import emailjs from '@emailjs/browser';
     e.preventDefault();
 
     emailjs
-      .sendForm('service_mm8gsw8', 'template_z722gse', form.current, {
+      .sendForm('service_6irridd', 'template_p1sto8c', form.current, {
         publicKey: 'hfkQFDAgTrDym5cHz',
       })
       .then(

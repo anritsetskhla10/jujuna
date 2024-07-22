@@ -59,7 +59,7 @@ function Nav() {
         </Link>
       </nav>
       <div className='flexDir'>
-        <button onClick={toggleNav} className='hidden titleFont text-[24px] max-md:block mr-3'>მენიუ</button>
+        <button onClick={toggleNav} className='hidden titleFont text-[24px] max-md:block mr-3'>{t('menu')}</button>
         <img className='w-[26px] h-[20px] mr-2 
         focus:border-[2px] focus:border-solid 
         focus:border-backgroundColor-purpleStart' 
