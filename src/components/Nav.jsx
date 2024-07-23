@@ -26,7 +26,7 @@ function Nav() {
   }, [isMobile]);
 
   return (
-    <div className='flexDir justify-between bg-backgroundColor-dark-backgroundCol py-[11px] pr-[70px] pl-[80px] max-md:relative'>
+    <div className='flexDir justify-between bg-backgroundColor-dark-backgroundCol py-[11px] pr-[70px] pl-[80px] max-md:py-[20px] max-md:px-[25px] max-md:relative'>
       <div>
         <img src="/images/logo.svg" alt="logo icon" />
       </div>

@@ -29,6 +29,10 @@
             @apply font-arialgeo text-[24px] text-color-primary max-md:text-[20px];
     }
 
+    .transparentPara{
+        @apply bg-clip-text text-transparent bg-bottleText;
+    }
+
     .gradient{
         background: 
         url(/images/jujuna1.png) 88% bottom / 66.7% 100% no-repeat,

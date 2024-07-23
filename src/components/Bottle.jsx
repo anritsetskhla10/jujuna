@@ -31,11 +31,11 @@ function Bottle() {
                 </div>
             </div>
             
-              <p className='paragraphFont text-color-black mb-[46px] 
+              <p className=' paragraphFont  mb-[46px] transparentPara
               max-tablet:w-[219px] max-tablet:mb-0 max-tablet:absolute 
-              max-tablet:left-[14px] max-tablet:top-[350px] max-tablet:text-[16px] dark:text-color-dark-black'>ჟუჟუს ბოთლი 250 მლ-იანია , რადგან სწორედ ეს პორც
-                <span className='text-color-primary max-tablet:text-color-black dark:text-color-dark-black'>ია</span> ინარჩუნებს მისართმევად საუკეთესო ტემპერატურასა 
-                <span className='text-color-primary max-tablet:text-color-black dark:text-color-dark-black'>&nbsp; და გაზს</span>.</p>
+              max-tablet:left-[14px] max-tablet:top-[350px] max-tablet:text-[16px] dark:text-color-dark-black'>
+              ჟუჟუს ბოთლი 250 მლ-იანია , რადგან სწორედ ეს პორცია ინარჩუნებს მისართმევად საუკეთესო ტემპერატურასა და გაზს.
+              </p>
               <div className='purpleBox w-fit py-[40px] ml-auto mb-3 
               max-tablet:ml-[52%] max-md:ml-auto max-tablet:p-[18px] 
               max-tablet:bg-transparent dark:bg-buttonColor-dark-secondary

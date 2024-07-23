@@ -59,6 +59,10 @@ export default {
           },
         },
       },
+
+      backgroundImage: {
+        'bottleText': 'linear-gradient(90deg, black 43vw, white 0px)',
+      },
       screens: {
         'max-mobile': {'max': '768px'},
         'max-md': {'max': '1024px'},
